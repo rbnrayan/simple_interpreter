@@ -14,6 +14,7 @@ impl<'a> Lexer<'a> {
         }
     }
 
+    // TODO: fix no whistepace problem (5+2 != 5 + 2)
     pub fn lex(mut self) -> Result<Vec<Token>, String> {
         let mut tokens = Vec::new();
 
